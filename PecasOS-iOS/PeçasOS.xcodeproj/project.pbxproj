@@ -1,0 +1,65 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		8F2D0A0100000000000000C8 /* PecasOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000064 /* PecasOSApp.swift */; };
+		8F2D0A0100000000000000C9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000065 /* Models.swift */; };
+		8F2D0A0100000000000000D1 /* BackupZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000071 /* BackupZip.swift */; };
+		8F2D0A0100000000000000CA /* PieceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000066 /* PieceStore.swift */; };
+		8F2D0A0100000000000000CB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000067 /* Theme.swift */; };
+		8F2D0A0100000000000000CC /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000068 /* PhotoPicker.swift */; };
+		8F2D0A0100000000000000CD /* PieceFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000069 /* PieceFormView.swift */; };
+		8F2D0A0100000000000000CE /* PieceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A01000000000000006A /* PieceDetailView.swift */; };
+		8F2D0A0100000000000000CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0A01000000000000006B /* ContentView.swift */; };
+		8F2D0A010000000000000011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D0A010000000000000010 /* Assets.xcassets */; };
+		8F2D0A010000000000000064 /* PecasOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PecasOSApp.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000065 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000071 /* BackupZip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupZip.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000066 /* PieceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceStore.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000067 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000068 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000069 /* PieceFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceFormView.swift; sourceTree = "<group>"; };
+		8F2D0A01000000000000006A /* PieceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceDetailView.swift; sourceTree = "<group>"; };
+		8F2D0A01000000000000006B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F2D0A010000000000000010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F2D0A010000000000000003 /* PecasOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PecasOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2D0A010000000000000009 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		8F2D0A010000000000000004 = {isa = PBXGroup; children = (8F2D0A010000000000000005 /* PeçasOS */, 8F2D0A010000000000000006 /* Products */,); sourceTree = "<group>"; };
+		8F2D0A010000000000000005 /* PeçasOS */ = {isa = PBXGroup; children = (
+				8F2D0A010000000000000064 /* PecasOSApp.swift */,
+				8F2D0A010000000000000065 /* Models.swift */,
+				8F2D0A010000000000000071 /* BackupZip.swift */,
+				8F2D0A010000000000000066 /* PieceStore.swift */,
+				8F2D0A010000000000000067 /* Theme.swift */,
+				8F2D0A010000000000000068 /* PhotoPicker.swift */,
+				8F2D0A010000000000000069 /* PieceFormView.swift */,
+				8F2D0A01000000000000006A /* PieceDetailView.swift */,
+				8F2D0A01000000000000006B /* ContentView.swift */,
+				8F2D0A010000000000000010 /* Assets.xcassets */,
+			); path = "PeçasOS"; sourceTree = "<group>"; };
+		8F2D0A010000000000000006 /* Products */ = {isa = PBXGroup; children = (8F2D0A010000000000000003 /* PecasOS.app */,); name = Products; sourceTree = "<group>"; };
+		8F2D0A010000000000000002 /* PecasOS */ = {isa = PBXNativeTarget; buildConfigurationList = 8F2D0A01000000000000000B; buildPhases = (8F2D0A010000000000000007, 8F2D0A010000000000000009, 8F2D0A010000000000000008,); buildRules = (); dependencies = (); name = PecasOS; productName = PecasOS; productReference = 8F2D0A010000000000000003; productType = "com.apple.product-type.application"; };
+		8F2D0A010000000000000001 /* Project object */ = {isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = { 8F2D0A010000000000000002 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 8F2D0A01000000000000000A; compatibilityVersion = "Xcode 14.0"; developmentRegion = pt-BR; hasScannedForEncodings = 0; knownRegions = ("pt-BR", en, Base,); mainGroup = 8F2D0A010000000000000004; productRefGroup = 8F2D0A010000000000000006; projectDirPath = ""; projectRoot = ""; targets = (8F2D0A010000000000000002,); };
+		8F2D0A010000000000000008 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (8F2D0A010000000000000011,); runOnlyForDeploymentPostprocessing = 0; };
+		8F2D0A010000000000000007 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+				8F2D0A0100000000000000C8 /* PecasOSApp.swift in Sources */,
+				8F2D0A0100000000000000C9 /* Models.swift in Sources */,
+				8F2D0A0100000000000000D1 /* BackupZip.swift in Sources */,
+				8F2D0A0100000000000000CA /* PieceStore.swift in Sources */,
+				8F2D0A0100000000000000CB /* Theme.swift in Sources */,
+				8F2D0A0100000000000000CC /* PhotoPicker.swift in Sources */,
+				8F2D0A0100000000000000CD /* PieceFormView.swift in Sources */,
+				8F2D0A0100000000000000CE /* PieceDetailView.swift in Sources */,
+				8F2D0A0100000000000000CF /* ContentView.swift in Sources */,
+			); runOnlyForDeploymentPostprocessing = 0; };
+		8F2D0A01000000000000000C /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_STYLE = Automatic; ENABLE_USER_SCRIPT_SANDBOXING = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; GCC_OPTIMIZATION_LEVEL = 0; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; }; name = Debug; };
+		8F2D0A01000000000000000D /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; CODE_SIGN_STYLE = Automatic; ENABLE_USER_SCRIPT_SANDBOXING = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; name = Release; };
+		8F2D0A01000000000000000E /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 3; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Peças OS"; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSCameraUsageDescription = "Fotografar as peças e suas fichas de execução."; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.6; PRODUCT_BUNDLE_IDENTIFIER = br.com.pecasos.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Debug; };
+		8F2D0A01000000000000000F /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 3; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Peças OS"; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_NSCameraUsageDescription = "Fotografar as peças e suas fichas de execução."; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; IPHONEOS_DEPLOYMENT_TARGET = 17.0; MARKETING_VERSION = 1.6; PRODUCT_BUNDLE_IDENTIFIER = br.com.pecasos.app; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 5.0; TARGETED_DEVICE_FAMILY = "1,2"; }; name = Release; };
+		8F2D0A01000000000000000A = {isa = XCConfigurationList; buildConfigurations = (8F2D0A01000000000000000C, 8F2D0A01000000000000000D,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		8F2D0A01000000000000000B = {isa = XCConfigurationList; buildConfigurations = (8F2D0A01000000000000000E, 8F2D0A01000000000000000F,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = 8F2D0A010000000000000001;
+}

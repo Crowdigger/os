@@ -1,0 +1,36 @@
+workflows:
+  pecas-os-ios-test:
+    name: Pecas OS - teste iOS sem assinatura
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+    environment:
+      xcode: latest
+    scripts:
+      - name: Localizar e inspecionar projeto Xcode
+        script: |
+          set -e
+          PROJECT_PATH=$(find "$CM_BUILD_DIR" -maxdepth 5 -type d -name '*.xcodeproj' -print -quit)
+          if [ -z "$PROJECT_PATH" ]; then
+            echo "ERRO: Nenhum .xcodeproj encontrado. Envie o projeto iOS completo ao GitHub."
+            exit 1
+          fi
+          echo "$PROJECT_PATH" > "$CM_BUILD_DIR/.pecasos_project_path"
+          xcodebuild -list -project "$PROJECT_PATH"
+      - name: Compilar app para simulador iOS sem assinatura
+        script: |
+          set -euo pipefail
+          PROJECT_PATH=$(cat "$CM_BUILD_DIR/.pecasos_project_path")
+          xcodebuild \
+            -project "$PROJECT_PATH" \
+            -scheme PecasOS \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath "$CM_BUILD_DIR/build/ios" \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            clean build
+    artifacts:
+      - build/ios/Build/Products/Debug-iphonesimulator/*.app
+      - /tmp/xcodebuild_logs/*.log
